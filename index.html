@@ -27,12 +27,13 @@
           <a href="#gastronomia">gastronomia</a>
           <a href="#tours">Tours</a>
           <a href="#hoteles">Hoteles</a>
+           <a href="./historia_de_San_Andres.html">Historia</a>
+           <a href="./escapadasanandres.html">escapada caribe</a>
           <a href="#contacto">Contacto</a>
         </div>
       </nav>
-    </div>
-  </header>
 
+      
   <main class="container">
     <section class="hero" aria-label="presentacion">
       <div>
@@ -48,7 +49,6 @@
       </aside>
     </section>
 
-    <!-- Sobre la isla -->
     <section id="lugares">
       <h2>Principales lugares y atractivos</h2>
       <div class="grid">
@@ -87,7 +87,6 @@
       </div>
     </section>
 
-    <!-- Playas -->
     <section id="playas">
       <h2>Playas destacadas</h2>
       <div class="grid" aria-live="polite">
@@ -97,7 +96,7 @@
       </div>
     </section>
 
-    <!-- Fauna y Flora -->
+    
     <section id="fauna">
       <h2>Fauna y Flora</h2>
       <p class="small">El archipiélago posee manglares, arrecifes coralinos y especies endémicas. Entre la fauna se encuentran aves endémicas como el sinsonte de San Andrés y reptiles únicos; en los arrecifes habitan tortugas, peces tropicales y corales.</p>
@@ -121,7 +120,6 @@
 
 
 
-    <!-- Tours -->
     <section id="tours">
       <h2>Tours populares</h2>
 
@@ -135,132 +133,111 @@
       <div id="tour-list" class="grid"></div>
     </section>
 
-    <!-- Hoteles -->
     <section id="hoteles">
       <h2>Hoteles y hospedaje</h2>
       <p class="small">Opciones para todos los presupuestos: hoteles frente al mar, hostales y cabañas. Revisa reseñas y disponibilidad antes de reservar.</p>
       <div id="hotel-list" class="grid"></div>
     </section>
 
-    <!-- Map -->
     <section id="mapa">
       <h2>Mapa</h2>
       <div class="map">
-        <!-- Reemplaza el src con tu URL de Google Maps o OpenStreetMap embebido -->
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3975.1234567890123!2d-81.7!3d12.58!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f3b5a6b7c8d9e0f%3A0xabcdef0123456789!2sSan%20Andr%C3%A9s%20Island!5e0!3m2!1ses!2sco!4v0000000000" allowfullscreen loading="lazy"></iframe>
       </div>
     </section>
 
-    <!-- Contacto -->
     <section id="contacto">
       <h2>Contacto & Recomendaciones</h2>
       <p class="small">Para mas informacion pueden contactarse al numero 3228023062 mayra lizeth tola varon.</p>
-
-      <table>
-        <thead><tr><th>Consejo</th><th>Por qué</th></tr></thead>
-        <tbody>
-          <tr><td>Usa fotos optimizadas</td><td>Mejor carga y SEO</td></tr>
-          <tr><td>Incluye llamadas a la acción (reservar)</td><td>Aumenta conversiones</td></tr>
-          <tr><td>Protección ambiental</td><td>Promociona turismo responsable</td></tr>
-        </tbody>
-      </table>
-    </section>
-
-  </main>
-
-  <footer>
-    <div class="container">
-      <p class="small">Plantilla creada para uso educativo. Reemplaza textos e imágenes por información actualizada y local.</p>
-      <p>&copy; 2025 Guía San Andrés</p>
-    </div>
-  </footer>
-
-  <!-- Modal imagen simple -->
-  <div id="modal" class="modal" role="dialog" aria-hidden="true"><img id="modal-img" src="" alt="imagen ampliada"></div>
-
-  <script>
-    // Datos de ejemplo: tours y hoteles (reemplaza con datos reales)
-    const tours = [
-      {id:1,title:'Tour a Johnny Cay',type:'isla',duration:'4 horas',price:'$40.000 COP',desc:'Paseo en lancha a Johnny Cay con tiempo para playa y snorkel',img:'https://aventureros360.com.co/wp-content/uploads/2025/03/Viajar-a-Colombia-Viajar-a-San-Andres-Johnny-Cay-2-con-Aventureros-360-1.svg'},
-      {id:2,title:'Snorkel La Piscinita',type:'snorkel',duration:'2 horas',price:'$70.000 COP',desc:'Experiencia de snorkel en aguas poco profundas y seguras',img:'https://lh3.googleusercontent.com/gps-cs-s/AC9h4noVhghJ6g-WRZLVC0vMOqByipZf-vroYUxTymq3LyhzW0qu04yCasuYN4otV3eTSTdTC660XcuOivc5HBotFlegw9hV9vi_6Grf8OAdpFY8vDx7algLbfv6pqFuIqCXIj-tiu03cQ=w270-h312-n-k-no'},
-      {id:3,title:'Buceo profesional',type:'buceo',duration:'4-6 horas',price:'$180.000 COP',desc:'Salida de buceo con instructor certificado',img:'https://www.viajescomfama.com/portals/1139/Images/san-andres/viajescomfama-san-andres-buceo-02.jpg'}
-    ];
-
-    const hotels = [
-      {id:1,name:'Hotel Frente al Mar',stars:4,priceFrom:'$220.000 COP',img:'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/16/24/88/76/decameron-aquarium.jpg?w=1200&h=-1&s=1'},
-      {id:2,name:'Hostal Raizal',stars:2,priceFrom:'$80.000 COP',img:'https://big-v-raizal-home.sanandreshotelspage.com/data/Images/OriginalPhoto/6889/688907/688907733/image-san-andres-san-andres-and-providencia-islands-big-v-raizal-home-14.JPEG'},
-      {id:3,name:'Eco-Cabañas',stars:3,priceFrom:'$140.000 COP',img:'https://solare-sai-cabanas-campestres-san-andres.sanandreshotelspage.com/data/Images/OriginalPhoto/8000/800089/800089977/image-san-andres-san-andres-and-providencia-islands-solare-sai-ecohotel-adults-only-9.JPEG'}
-    ];
-
-    // Render tours
-    const tourList = document.getElementById('tour-list');
-    function renderTours(filter='all'){
-      tourList.innerHTML = '';
-      const filtered = tours.filter(t=> filter==='all' ? true : t.type===filter);
-      filtered.forEach(t=>{
-        const el = document.createElement('article'); el.className='card';
-        el.innerHTML = `
-          <img src="${t.img}" alt="${t.title}">
-          <div class="card-body">
-            <h3>${t.title}</h3>
-            <p class="small">${t.desc}</p>
-            <div class="small">Duración: ${t.duration} · Precio desde ${t.price}</div>
-            <div style="margin-top:10px"><button onclick="bookTour(${t.id})" class="tag">"https://sanandres.travel/tour/johnny-cay"</button></div>
-          </div>`;
-        tourList.appendChild(el);
-      });
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Encuesta sobre San Andrés Islas</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom, #a7ffeb, #e0f7fa);
+      margin: 0;
+      padding: 0;
     }
-
-    // Render hoteles
-    const hotelList = document.getElementById('hotel-list');
-    function renderHotels(){
-      hotelList.innerHTML='';
-      hotels.forEach(h=>{
-        const el = document.createElement('article'); el.className='card';
-        el.innerHTML = `
-          <img src="${h.img}" alt="${h.name}">
-          <div class="card-body">
-            <h3>${h.name} <span class="small">· ${h.stars}★</span></h3>
-            <p class="small">Desde ${h.priceFrom} por noche</p>
-            <div style="margin-top:10px"><button class="tag" onclick="bookHotel(${h.id})">Ver</button></div>
-          </div>`;
-        hotelList.appendChild(el);
-      });
+    header {
+      background-color: #00897b;
+      color: white;
+      text-align: center;
+      padding: 20px;
     }
-
-    // Reservas (simples)
-    function bookTour(id){
-      const t = tours.find(x=>x.id===id);
-      alert('Reservar: '+t.title+' — Reemplaza esta función con integración real.');
+    form {
+      background: white;
+      max-width: 500px;
+      margin: 30px auto;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.2);
     }
-    function bookHotel(id){
-      const h = hotels.find(x=>x.id===id);
-      alert('Ver hotel: '+h.name+' — Reemplaza con página de reservas.');
+    label {
+      font-weight: bold;
+      color: #004d40;
+      display: block;
+      margin-top: 10px;
     }
+    input, select, textarea {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    button {
+      margin-top: 15px;
+      background-color: #00897b;
+      color: white;
+      border: none;
+      padding: 10px;
+      border-radius: 8px;
+      font-size: 15px;
+      cursor: pointer;
+      width: 100%;
+    }
+    button:hover {
+      background-color: #004d40;
+    }
+  </style>
+</head>
+<body>
 
-    // Filters UI
-    document.querySelectorAll('.chip').forEach(btn=>btn.addEventListener('click',e=>{
-      document.querySelectorAll('.chip').forEach(c=>c.classList.remove('active'));
-      btn.classList.add('active');
-      const f = btn.getAttribute('data-filter');
-      renderTours(f);
-    }));
+  <header>
+    <h1>Encuesta sobre San Andrés 🌴</h1>
+  </header>
 
-    // Modal image
-    document.addEventListener('click',e=>{
-      if(e.target.tagName==='IMG' && e.target.closest('.card')){
-        document.getElementById('modal-img').src = e.target.src.replace('600x400','1200x800');
-        document.getElementById('modal').classList.add('open');
-      }
-    });
-    document.getElementById('modal').addEventListener('click',()=>{
-      document.getElementById('modal').classList.remove('open');
-    });
+  <form>
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" required>
 
-    // Inicializar
-    renderTours();
-    renderHotels();
-  </script>
-</body>
-</html>
+    <label>¿Has visitado San Andrés?</label>
+    <input type="radio" name="visita" value="si"> Sí
+    <input type="radio" name="visita" value="no"> No
+
+    <label>¿Qué lugar te gustó o te gustaría visitar?</label>
+    <select name="lugar">
+      <option value="johnny">Johnny Cay</option>
+      <option value="acuario">El Acuario</option>
+      <option value="hoyo">Hoyo Soplador</option>
+      <option value="piscinita">La Piscinita</option>
+    </select>
+
+    <label>¿Cómo calificarías el turismo en la isla?</label>
+    <select name="calificacion">
+      <option value="excelente">Excelente</option>
+      <option value="bueno">Bueno</option>
+      <option value="regular">Regular</option>
+      <option value="malo">Malo</option>
+    </select>
+
+    <label for="comentarios">Comentarios:</label>
+    <textarea id="comentarios" name="comentarios" rows="3" placeholder="Escribe tu opinión..."></textarea>
+
+    <button type="submit">Enviar Encuesta</button>
+  </form>
 
